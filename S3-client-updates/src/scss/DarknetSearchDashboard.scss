@@ -1,0 +1,75 @@
+@import 'settings';
+
+$padding: 4rem;
+
+.darknet-search-dashboard {
+
+  display: flex;
+  .left-side {
+    flex: 1;
+    padding: $padding;
+    max-width: 500px;
+    border-right: solid 1px $gray-border;
+  }
+  .right-side {
+    flex: 1;
+    padding: $padding;
+  }
+
+  .form-container {
+    .inputs-container {
+      margin-bottom: 2rem;
+      .input-item {
+        width: 100%;
+        margin-bottom: 1rem;
+        label {
+          display: block;
+          color: $gray-700;
+          font-size: .8rem;
+          margin-bottom: .25rem;
+        }
+        input {
+          font-size: 1.25rem;
+          padding: .5rem;
+          width: 100%;
+        }
+      }
+    }
+    .buttons-container {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      button {
+        min-width: 200px;
+        width: 100%;
+      }
+    }
+  }
+
+  .loading-container {
+    .loading-copy {
+      font-size: 1.25rem;
+      span {
+        display: block;
+        font-family: monospace;
+        margin-top: 1.5rem;
+        //font-style: italic;
+        color: $gray-700;
+        font-size: .85rem;
+      }
+    }
+  }
+
+  .results-container {
+
+  }
+
+  .intro-container {
+    h2 {
+      margin-bottom: 1rem;
+    }
+    .intro-copy {
+
+    }
+  }
+}

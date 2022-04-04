@@ -1,0 +1,39 @@
+@import 'settings';
+
+.darknet-results {
+  .no-results {
+    margin-bottom: 1rem;
+  }
+  .results-section {
+    .results-section-header {
+      margin-bottom: 2rem;
+    }
+    .password-results-section {
+      margin-bottom: 1rem;
+      .password-results-header {
+        margin-bottom: 1rem;
+      }
+      .password-results-list {
+        li {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .report-results-section {
+      .report-results-header {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .download-button {
+          border: solid black 1px;
+        }
+      }
+      .report-results-list {
+        li {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

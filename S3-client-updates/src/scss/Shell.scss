@@ -1,0 +1,23 @@
+@import 'settings';
+
+.shell {
+  .header-container {
+    height: $header-height;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 1px $gray-border;
+  }
+  .shell-body {
+    padding-top: $header-height;
+    display: flex;
+    .side-nav-container {
+      flex: 0 0 $side-nav-width;
+      height: calc(100vh - #{$header-height});
+      border-right: solid 1px $gray-border;
+    }
+    .shell-content {
+      flex: 1;
+    }
+  }
+}

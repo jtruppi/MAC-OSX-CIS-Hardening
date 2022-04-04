@@ -1,0 +1,118 @@
+@import 'settings';
+
+.search-box {
+  border: solid 1px $gray-border;
+  border-radius: .25rem;
+  min-width: 400px;
+  min-height: 400px;
+  .file-input-container {
+    .file-input {
+      display: none;
+    }
+  }
+
+  .search-box-header {
+    display: flex;
+    margin-bottom: 2rem;
+    li {
+      flex: 1;
+      min-height: 3rem;
+      transition: background-color .2s ease;
+      border-bottom: solid 1px $gray-border;
+      .search-by {
+        font-size: .9rem;
+        color: $gray-700;
+        font-style: italic;
+        margin: auto;
+      }
+      &.active {
+        background-color: $gray-background;
+        text-decoration: underline;
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        transition: background-color .2s ease;
+        &:hover {
+          background-color: $gray-200;
+        }
+      }
+    }
+  }
+
+  .search-box-content {
+    padding: 2rem;
+  }
+
+  .or-section {
+    margin: auto;
+    margin-bottom: 2rem;
+    max-width: 400px;
+  }
+
+  .item {
+    .item-header {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        margin-right: 1.5rem;
+        color: $primary-color;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &.file-checker-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .item-content {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &.ip-checker-container {
+      .single-input-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        .input-container {
+          margin-right: 1rem;
+          input {
+            font-size: 1rem;
+            padding: .6rem;
+          }
+        }
+      }
+
+      .file-upload-section {
+        .buttons-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .file-upload-description {
+          max-width: 300px;
+          text-align: center;
+          margin: auto;
+          margin-bottom: 2rem;
+          font-size: .9rem;
+          line-height: 1.5;
+          a {
+            color: blue;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

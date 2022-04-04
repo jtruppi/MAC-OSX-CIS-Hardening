@@ -1,0 +1,25 @@
+@import 'settings';
+
+.side-nav {
+  .links-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 2rem;
+    li {
+      padding: 0;
+      margin: 0;
+      &.selected {
+        background-color: $gray-background;
+      }
+      a {
+        padding: 1rem 1rem 1rem;
+        display: block;
+        &:hover {
+          cursor: pointer;
+          background-color: $gray-200;
+        }
+      }
+    }
+  }
+}

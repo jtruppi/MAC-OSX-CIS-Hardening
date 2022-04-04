@@ -1,0 +1,44 @@
+.report {
+  img {
+    height: 100px;
+  }
+  h1 {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+    span {
+      font-weight: bold;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      padding: 1rem;
+      border: solid 1px lightgray;
+      border-radius: .25rem;
+      margin-bottom: 2rem;
+      transition: all .1s ease;
+      font-size: 1.15rem;
+      &:hover {
+        background-color: lighten(lightgray, 15%);
+      }
+    }
+    .item {
+      display: flex;
+      margin-bottom: .5rem;
+    }
+    .label {
+      margin-right: 2rem;
+      flex-basis: 12rem;
+      text-transform: uppercase;
+      font-size: .8rem;
+    }
+    .value {
+      word-break: break-all;
+      font-weight: bold;
+      font-size: .8rem;
+    }
+  }
+}

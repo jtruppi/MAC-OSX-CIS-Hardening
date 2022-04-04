@@ -1,0 +1,79 @@
+@import 'settings';
+
+$red: lighten(red, 40%);
+$orange: lighten(orange, 40%);
+
+.analysis-card {
+  border-radius: .25rem;
+  &.malicious {
+    background-color: $red;
+  }
+  &.suspicious {
+    background-color: $orange;
+  }
+
+  .query-value {
+    flex-basis: 200px;
+    margin-right: 2rem;
+  }
+  .analysis-card-top {
+    display: flex;
+  }
+  .analysis-card-bottom {
+
+    .analysis-card-engines-section {
+      padding-top: 2rem;
+
+      .analysis-card-engines-header {
+        font-size: .9rem;
+        margin-bottom: 1rem;
+        font-style: italic;
+      }
+      .analysis-card-engines-container {
+        display: flex;
+        flex-wrap: wrap;
+        .analysis-card-engine {
+          border: solid black 1px;
+          border-radius: .5rem;
+          padding: .5rem;
+          font-size: .9rem;
+          margin-right: .5rem;
+          margin-bottom: .5rem;
+        }
+      }
+    }
+  }
+  .right-container {
+    flex: 1;
+    .loading-container {
+      .loading-title {
+        color: $gray-500;
+        font-style: italic;
+      }
+      .loading-subtitle {
+        margin-top: .5rem;
+        color: $gray-500;
+        font-style: italic;
+        font-size: .75rem;
+      }
+    }
+    .max-reached {
+      color: teal;
+      font-weight: bold;
+    }
+    .threat-level-container {
+      .threat-level {
+        text-transform: uppercase;
+        &.malicious {
+          color: red;
+        }
+        &.suspicious {
+          color: darken(orange, 20%);
+        }
+        &.safe {
+          color: green;
+        }
+      }
+    }
+  }
+}
